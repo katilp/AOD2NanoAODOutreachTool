@@ -17,7 +17,7 @@ jobs:
       - name: Going to a container
         id: container
         run: | 
-          docker run -v $(pwd):/mnt/vol -w /home/cmsusr cmsopendata/cmssw_5_3_32 /bin/bash /mnt/vol/commands.sh 1000 data_cfg.py
+          docker run -v $(pwd):/mnt/vol -w /home/cmsusr cmsopendata/cmssw_5_3_32 /bin/bash /mnt/vol/commands.sh 10 data_cfg.py
           echo ls -l  `ls -l `
           cp output.root outputs
       # upload output file
