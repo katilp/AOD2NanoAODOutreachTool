@@ -21,7 +21,7 @@ spec:
         git --version
         echo openssl versions:
         which openssl
-        openssl version
+        openssl version || echo ignore exit code
         sudo chown $USER /mnt/vol
         mkdir workspace
         cd workspace
